@@ -1,0 +1,86 @@
+@import 'bourbon'
+form
+ max-width: 450px
+ margin: 0 auto 100px
+ padding: 0 20px
+
+ input, textarea
+  border:3px solid #d49e58
+  width:100%
+  +box-sizing(border-box)
+  padding:10px
+  &:focus
+   outline:none
+   border-color:#e1c184
+
+
+ .submit-wrap
+  text-align:right
+
+
+ [type="submit"]
+  cursor:pointer
+  background:#d49e58
+  color:white
+  font:
+   size:18px
+  text-transform:uppercase
+  width:33%
+
+  &:hover
+   background:#e1c184
+
+
+
+ textarea
+  height:10em
+  resize: none
+
+
+
+
+  &:focus
+   outline:none
+   border-color:#e1c184
+
+
+
+ .contact-info-group
+  label
+   width:50%
+   float:left
+   +box-sizing(border-box)
+
+
+   &:nth-child(1)
+    padding-right:10px
+   &:nth-child(2)
+    padding-left:10px
+
+ label
+  display: block
+  margin-bottom: 20px
+
+  span
+   display:block
+
+@media (max-width: 650px)
+  form
+   .contact-info-group
+     width: 100%
+
+     label
+       width: 100%
+
+       &:nth-child(1)
+         padding: 0
+         width: 100%
+
+       &:nth-child(2)
+         padding: 0
+         width: 100%
+
+   .submit-wrap
+    width:100%
+   [type="submit"]
+     width:100%
